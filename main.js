@@ -1,7 +1,7 @@
 const {app, session, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
-require('dotenv').config();
+
 
 let userAgent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36';
 
