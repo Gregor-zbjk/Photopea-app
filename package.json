@@ -4,7 +4,13 @@
   "description": "A simple app to bring Photopea to Desktop",
   "main": "main.js",
   "scripts": {
-    "start": "Electron ."
+    "start": "Electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . photopea-desktop --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Photopea Desktop\"",
+    "package-linux": "electron-packager . photopea-desktop --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/128x128.png --prune=true --out=release-builds",
+    "build-debian": "electron-installer-debian --src=release-builds/photopea-desktop-linux-x64/ --arch=amd64 --config=debian.json"
   },
   "repository": {
     "type": "git",
@@ -27,6 +33,8 @@
   },
   "homepage": "https://github.com/Gregor-zbjk/Photopea-app#readme",
   "devDependencies": {
-    "electron": "^21.2.0"
+    "electron": "^21.2.0",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^17.0.0"
   }
 }
