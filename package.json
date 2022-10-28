@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Gregor-zbjk/Photopea-app/issues"
   },
-  "homepage": "https://github.com/Gregor-zbjk/Photopea-app#readme"
+  "homepage": "https://github.com/Gregor-zbjk/Photopea-app#readme",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
 }
