@@ -4,7 +4,7 @@
   "description": "A simple app to bring Photopea to Desktop",
   "main": "main.js",
   "scripts": {
-    "test": "electron ."
+    "start": "Electron ."
   },
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "Photopea",
+    "App",
     "macOS",
     "Linux",
     "Windows",
@@ -19,7 +20,7 @@
     "Webapp",
     "Electron"
   ],
-  "author": "Gregor Zobjak",
+  "author": "Gregor Zobjak (gregor-zbjk)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gregor-zbjk/Photopea-app/issues"
